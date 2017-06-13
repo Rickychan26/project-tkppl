@@ -1,0 +1,95 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import 'prism/themes/prism-okaidia.css'
+// Check out "bower_components/prism/themes/" for available themes
+
+body{
+	background: url(/images/bg2.png);
+}
+section{
+	background: cyan;
+}
+
+.wrapper{
+	width: 114.5%;
+	height: 120%;
+	background: url(/images/bg3.png) cyan;
+	background-size: cover;
+}
+
+.fbird{
+	width: 100px;
+	height: auto;
+	margin-top: 30px;
+}
+
+.title{
+	font-family: cursive;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+.start2, .Score, .ins{
+	width: 120px;
+	height: 40px;
+	line-height: 30px;
+	background: red;
+	border: 5px solid white;
+	box-shadow: -4px 3px 0px 5px black;
+	font-weight: bold;
+	color: white;
+	font-family: 'arial';
+
+}
+
+.start2 a, .Score a, .ins a{
+	color: white;
+}
+
+.start2{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.Score{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.start2:hover, .Score:hover, .ins:hover{
+	background: orange;
+}
+
+.start2:active, .Score:active, .ins:active{
+	background: red;
+}
+
+.icon{
+	width: 45px;
+	height: auto;
+	float:  left;
+	margin-top: 100px;
+	margin-left: 30px;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.ins{
+	margin: 0 auto;
+	margin-top: 20px;
+	font-size: 20px;
+
+}
+
+h2{
+	color: blue;
+}
+
+ul li{
+	color: rgb(85, 255, 0);
+}
