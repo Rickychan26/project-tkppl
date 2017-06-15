@@ -8,64 +8,93 @@
 // Check out "bower_components/prism/themes/" for available themes
 
 body{
-	background: url(/images/bg2.png);
-}
-section{
-	background: cyan;
-}
-
-.wrapper{
-	width: 114.5%;
-	height: 120%;
-	background: url(/images/bg3.png) cyan;
-	background-size: cover;
+	background-color: #f1c40f;
+	-webkit-animation: color 1s ease-in  0s infinite alternate running;
+	-moz-animation: color 1s linear  0s infinite alternate running;
+	animation: color 1s linear  0s infinite alternate running;
 }
 
-.fbird{
-	width: 100px;
-	height: auto;
-	margin-top: 30px;
+
+
+/* Animasi + Prefix untuk browser */
+@-webkit-keyframes color {
+    0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+@-moz-keyframes color {
+     0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+@keyframes color {
+   	0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+
+.bespoke-slide{
+    background: url(/images/1.jpg) center;
+    background-size: cover;
+    
 }
 
 .title{
-	font-family: cursive;
-    font-size: 70px;
-    font-weight: bold;
-    color: white;
+	width: 500px;
+	height: 170px;
+	line-height: 170px;
+	background: url(/images/puzzle3.png) no-repeat center;
+	background-size: 170px;
+	margin: -100px auto;
+	font-family: 'squares';
+	font-size:  50px;
+	color: blue;
+	text-shadow: 0px -1px 0px white,
+				 0px -2px 0px white,
+				 0px -3px 0px white,
+				 0px -4px 0px white,
+				 0px -5px 0px white,
+				 0px -5px 5px black,
+				 0px -7px 7px black;
+
 }
 
-.start2, .Score, .ins{
-	width: 120px;
-	height: 40px;
-	line-height: 30px;
-	background: red;
-	border: 5px solid white;
-	box-shadow: -4px 3px 0px 5px black;
+
+
+
+.start2, .ins{
+	width: 125px;
+	height: 45px;
+	line-height: 45px;
+	background: #00ff18;
+	border-radius: 30px;
+	box-shadow: 0px 0px 20px 7px black inset;
 	font-weight: bold;
-	color: white;
 	font-family: 'arial';
 
 }
 
-.start2 a, .Score a, .ins a{
+.start2 a, .ins a{
 	color: white;
 }
 
 .start2{
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 130px;
 }
 
-.Score{
-	margin: 0 auto;
-	margin-top: 20px;
+.start2:hover, .ins:hover{
+	background: cyan;
+	transition:  0.3s all;
 }
 
-.start2:hover, .Score:hover, .ins:hover{
-	background: orange;
-}
-
-.start2:active, .Score:active, .ins:active{
+.start2:active, .ins:active{
 	background: red;
 }
 
@@ -87,9 +116,13 @@ section{
 }
 
 h2{
+	font-family: origicide;
 	color: blue;
 }
 
-ul li{
-	color: rgb(85, 255, 0);
+li{
+	color:  red;
+	font-weight: bold;
+	font-family: calibri;
+	font-size: 25px;
 }
