@@ -120,54 +120,63 @@ pre[class*="language-"] {
 }
 
 body {
-  background-color: #f1c40f;
-  -webkit-animation: color 1s ease-in 0s infinite alternate running;
-  animation: color 1s linear 0s infinite alternate running;
+  background-color: #008000;
+  width: 100%;
 }
-/* Animasi + Prefix untuk browser */
+/*
+ Animasi + Prefix untuk browser 
 @-webkit-keyframes color {
-  0% {
-    background-color: #f1c40f;
-  }
-  32% {
-    background-color: #e74c3c;
-  }
-  55% {
-    background-color: #9b59b6;
-  }
-  76% {
-    background-color: #16a085;
-  }
-  100% {
-    background-color: #2ecc71;
-  }
+    0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
 }
+@-moz-keyframes color {
+     0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+@keyframes color {
+   	0% { background-color: #f1c40f; }
+    32% { background-color: #e74c3c; }
+    55% { background-color: #9b59b6; }
+    76% { background-color: #16a085; }
+    100% { background-color: #2ecc71; }
+}
+*/
 .bespoke-slide {
-  background: url("/images/1.jpg") center;
+  background: url("../images/22.jpg") center;
   background-size: cover;
+  width: 100%;
+  margin-left: -683px;
+  height: 100%;
+  margin-top: -330px;
+}
+.wrapper {
+  background-size: cover;
+  margin-left: 500px;
 }
 .title {
-  width: 500px;
-  height: 170px;
-  line-height: 170px;
-  background: url("/images/puzzle3.png") no-repeat center;
-  background-size: 170px;
-  margin: -100px auto;
+  height: 0 auto;
+  margin: 40px auto;
   font-family: 'squares';
-  font-size: 50px;
-  color: #00f;
+  font-size: 60px;
+  color: #f00;
   text-shadow: 0px -1px 0px #fff, 0px -2px 0px #fff, 0px -3px 0px #fff, 0px -4px 0px #fff, 0px -5px 0px #fff, 0px -5px 5px #000, 0px -7px 7px #000;
 }
 .start2,
 .ins {
-  width: 125px;
+  width: 130px;
   height: 45px;
   line-height: 45px;
-  background: #00ff18;
-  border-radius: 30px;
+  background: #16a002;
+  border-radius: 10px;
   box-shadow: 0px 0px 20px 7px #000 inset;
   font-weight: bold;
-  font-family: 'arial';
+  font-family: 'cambria';
 }
 .start2 a,
 .ins a {
@@ -175,11 +184,11 @@ body {
 }
 .start2 {
   margin: 0 auto;
-  margin-top: 130px;
+  margin-top: 50px;
 }
 .start2:hover,
 .ins:hover {
-  background: #0ff;
+  background: #808080;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
@@ -202,46 +211,16 @@ body {
   font-size: 20px;
 }
 h2 {
+  margin-left: 500px;
   font-family: origicide;
-  color: #00f;
+  color: #f00;
+  text-shadow: 0px -1px 0px #fff, 0px -2px 0px #fff, 0px -3px 0px #fff, 0px -4px 0px #fff, 0px -5px 0px #fff, 0px -5px 5px #000, 0px -7px 7px #000;
 }
 li {
-  color: #f00;
+  color: #000;
   font-weight: bold;
-  font-family: calibri;
+  font-family: Maiandra GD;
   font-size: 25px;
-}
-@-webkit-keyframes color {
-  0% {
-    background-color: #f1c40f;
-  }
-  32% {
-    background-color: #e74c3c;
-  }
-  55% {
-    background-color: #9b59b6;
-  }
-  76% {
-    background-color: #16a085;
-  }
-  100% {
-    background-color: #2ecc71;
-  }
-}
-@keyframes color {
-  0% {
-    background-color: #f1c40f;
-  }
-  32% {
-    background-color: #e74c3c;
-  }
-  55% {
-    background-color: #9b59b6;
-  }
-  76% {
-    background-color: #16a085;
-  }
-  100% {
-    background-color: #2ecc71;
-  }
+  margin-left: 500px;
+  margin-top: 20px;
 }
