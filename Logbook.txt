@@ -1,0 +1,5 @@
+1. melakukan install node.js dan bespoke
+2. membuat design halaman utama dengan css
+3. membuat fitur-fitur yang diperlukan untuk project yang dibuat
+4. membuat isi dari fitur Instruksi
+5. membuat game menggunakan javascript dan css
