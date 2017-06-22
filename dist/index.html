@@ -6,14 +6,16 @@
     <title>project tkppl</title>
     <link rel="stylesheet" type="text/css" href="build/build.css">
     <script src="build/build.js"></script>
+    <script src="../scripts/game.js"></script>
+    <script src="../scripts/puzzle.js"></script>
   </head>
-  <body>
+  <body onload="InitGame();">
     <article>
       <section>
-        <div class="wrapper"><img src="/images/clumsy.png" class="fbird">
-          <div class="title">Flappy Bird</div>
-          <div class="start2"><a href="#">Start</a></div>
-          <div class="Score"><a href="#">Score</a></div><img src="/images/vol.png" title="Mute" onclick="copy()" class="icon">
+        <div class="wrapper">
+          <div class="title">Snake Game</div>
+          <div class="start2"><a href="#4">Start</a></div>
+          <!-- img.icon(src="/images/vol.png" title="Mute" onclick="copy()")//-->
           <div class="ins"><a href="#2">Instruction</a></div>
         </div>
       </section>
@@ -21,69 +23,24 @@
         <h2>Instruction</h2>
         <ul>
           <li>Start The Game, Click the Start Button</li>
-          <li>press the space button to allow your bird to fly and to start the game.</li>
-          <li>Stay in the middle of screen until the first set of pipes appears. Measure your tap heights to go between the two pipes.</li>
+          <li>press the "I" button on keyboard to move the snake up,</li>
+          <li>the "J" button to move left</li>
+          <li>the "K" button to move Right and</li>
+          <li>the "M" button to move Down</li>
         </ul>
       </section>
       <section>
         <h2>Instruction</h2>
         <ul>
-          <li>The faster you tap, the higher you go. Each tap represents a wing flap and higher flight. Once you stop, you drop towards the ground.</li>
-          <li>Stay in the middle of the pipes. This is the main objective of the game. If you hit a pipe or the ground, the game ends.</li>
-          <li> Try not to go high. You can still bump into a pipe. </li>
+          <li>Don't let the snake bump the wall</li>
+          <li>or the game will over</li>
+          <li>make the best score that you can</li>
+          <div class="start3"><a href="#1">Menu</a></div>
         </ul>
       </section>
-      <section>
-        <h2>Keyboard Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a></h3>
-      </section>
-      <section>
-        <h2>Touch Interaction</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a></h3>
-      </section>
-      <section>
-        <h2>Responsive Slides</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a></h3>
-      </section>
-      <section>
-        <h2>Bullet List</h2>
-        <h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a></h3>
-        <ul>
-          <li>Bullet 1</li>
-          <li>Bullet 2</li>
-          <li>Bullet 3</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Syntax Highlighting</h2>
-        <h3>Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a></h3>
-        <pre><code class="language-javascript">bespoke.from('article', [
-  classes(),
-  keys(),
-  touch(),
-  bullets('li, .bullet')
-]);
-</code></pre>
-      </section>
-      <section data-bespoke-hash="named-route">
-        <h2>Named Route</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
-        <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
-      </section>
-      <section data-bespoke-backdrop="emphatic" class="emphatic-text">
-        <h2>Emphatic Slide!</h2>
-        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a></h3>
-      </section>
-      <section>
-        <h2 class="bullet">Just the beginning...</h2><br>
-        <ul>
-          <li>Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em></li>
-          <li>Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em></li>
-          <li>Edit JavaScript in <em>'src/scripts/main.js'</em></li>
-        </ul><br>
-        <ul>
-          <li><strong>Enjoy! :)</strong><a href="http://twitter.com/markdalgleish"> -@markdalgleish</a></li>
-        </ul>
+      <section>           
+        <h2>Simple Snake Game</h2>
+        <canvas id="stage" height="300" width="420"></canvas>
       </section>
     </article>
     <script src="build/build.js"></script>
